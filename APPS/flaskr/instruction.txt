@@ -1,0 +1,6 @@
+set FLASK_APP=flaskr.py
+set FLASK_DEBUG=true
+flask run
+
+
+#it's different to python2(.py) and python3
