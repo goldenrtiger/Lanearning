@@ -4,3 +4,4 @@ flask run
 
 
 #it's different to python2(.py) and python3
+#windows:set linux:export
