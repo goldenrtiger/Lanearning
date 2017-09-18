@@ -10,8 +10,20 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-	return render_template('layout.html')
+	return render_template('home.html')
 
 @app.route('/play')
 def play():
 	return render_template('play.html')
+
+@app.route('/Phonetics')
+def Phonetics():
+	return render_template('Phonetics.html')
+
+@app.route('/leason1')
+def leason1():
+	return render_template('leason1.html')
+
+@app.route('/leason2')
+def leason2():
+	return render_template('leason2.html')

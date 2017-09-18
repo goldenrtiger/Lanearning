@@ -1,0 +1,47 @@
+<!doctype html>
+<title>Lanearning</title>
+<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css')}}"> -->
+
+<style type="text/css">
+body            { font-family: sans-serif; background: #eee; }
+a, h1, h2       { color: #377ba8; }
+h1, h2          { font-family: 'Georgia', serif; margin: 0; }
+h1              { border-bottom: 2px solid #eee; }
+h2              { font-size: 1.2em; }
+
+.page			{ margin:  auto; width: auto; height: auto; border: auto solid #ccc;
+                  padding: auto; background: white; }
+
+.css3			{overflow: hidden; /*自动隐藏文字*/	text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+				white-space: nowrap;/*强制不换行*/width: 20em;/*不允许出现半汉字截断*/
+				color:#6699ff;border:1px #ff8000 dashed;}			
+</style>
+
+
+<div class = page>
+	<h1>Lanearning</h1>
+	<p><h2>Leçon deux</h2></p>
+	<div>Est-ce que c'est <audio controls> <source src="{{ url_for('static', filename = 'isit.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Que fait-il? <audio controls> <source src="{{ url_for('static', filename = 'whatdoeshedo.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Il est chercheur. <audio controls> <source src="{{ url_for('static', filename = 'heisaresearcher.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>journaliste. <audio controls> <source src="{{ url_for('static', filename = 'journalist.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>acteur. <audio controls> <source src="{{ url_for('static', filename = 'actor.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>facteur. <audio controls> <source src="{{ url_for('static', filename = 'postman.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>styliste. <audio controls> <source src="{{ url_for('static', filename = 'stylist.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>actrice. <audio controls> <source src="{{ url_for('static', filename = 'actress.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>factrice. <audio controls> <source src="{{ url_for('static', filename = 'postwoman.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+
+	<p><h2>pratiquer</h2> </p>
+
+	<div>
+		<div style = "width:50%; float:left;">(1)<input type="text" style = "margin-right:40px; "name="q1.0"></div>
+		<div style = "width:50%; float:left;"><input name="q1.1"></div>
+	</div>
+	<div>
+		<div style = "width:50%; float:left;">Oui, c'est Pascal.</div>
+		<div style = "width:50%; float:left;">Il est journaliste.</div>
+	</div>
+
+
+</div>
+

@@ -1,0 +1,31 @@
+<!doctype html>
+<title>Lanearning</title>
+<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css')}}"> -->
+
+<style type="text/css">
+body            { font-family: sans-serif; background: #eee; }
+a, h1, h2       { color: #377ba8; }
+h1, h2          { font-family: 'Georgia', serif; margin: 0; }
+h1              { border-bottom: 2px solid #eee; }
+h2              { font-size: 1.2em; }
+
+.page			{ margin:  auto; width: auto; height: auto; border: auto solid #ccc;
+                  padding: auto; background: white; }
+
+.css3			{overflow: hidden; /*自动隐藏文字*/	text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+				white-space: nowrap;/*强制不换行*/width: 20em;/*不允许出现半汉字截断*/
+				color:#6699ff;border:1px #ff8000 dashed;}			
+</style>
+
+
+<div class = page>
+	<h1>Lanearning</h1>
+	<h2>Leason1</h2> 
+	<div>Bonjour, comarade <audio controls> <source src="{{ url_for('static', filename = 'morning.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Comment ça va <audio controls> <source src="{{ url_for('static', filename = 'howareyou.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Ça va bien, merci. <audio controls> <source src="{{ url_for('static', filename = 'Iamfinethankyou.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Au revoir, monsieur. <audio controls> <source src="{{ url_for('static', filename = 'Byesir.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Qui est-ce C'est Pascal. <audio controls> <source src="{{ url_for('static', filename = 'whoisthis.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Où est-il Il est à Calais. <audio controls> <source src="{{ url_for('static', filename = 'whereishe.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Où est-elle Elle est à Nice. <audio controls> <source src="{{ url_for('static', filename = 'whereisshe.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+</div>
