@@ -20,6 +20,10 @@ def play():
 def Phonetics():
 	return render_template('Phonetics.html')
 
+@app.route('/Lexique')
+def lexique():
+	return render_template('lexique.html')
+
 @app.route('/leason1')
 def leason1():
 	return render_template('leason1.html')
@@ -27,3 +31,7 @@ def leason1():
 @app.route('/leason2')
 def leason2():
 	return render_template('leason2.html')
+
+@app.route('/lesson3')
+def leason3():
+	return render_template('lesson3.html')

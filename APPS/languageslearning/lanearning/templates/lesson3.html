@@ -1,0 +1,123 @@
+<!doctype html>
+<title>Lanearning</title>
+<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css')}}"> -->
+
+<style type="text/css">
+body            { font-family: sans-serif; background: #eee; }
+a, h1, h2       { color: #377ba8; }
+h1, h2          { font-family: 'Georgia', serif; margin: 0; }
+h1              { border-bottom: 2px solid #eee; }
+h2              { font-size: 1.2em; }
+
+.page			{ margin:  auto; width: auto; height: auto; border: auto solid #ccc;
+                  padding: auto; background: white; }
+
+.css3			{overflow: hidden; /*自动隐藏文字*/	text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+				white-space: nowrap;/*强制不换行*/width: 20em;/*不允许出现半汉字截断*/
+				color:#6699ff;border:1px #ff8000 dashed;}			
+</style>
+
+
+<div class = page>
+	<h1>Lanearning</h1>
+	<p><h2>Leçon trois</h2></p>
+	<p><h2>hommes</h2></p>	
+	<div>est-ce que Rene est...?<audio controls> <source src="{{ url_for('static', filename = 'Is Rene.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>thomas. <audio controls> <source src="{{ url_for('static', filename = 'thomas.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>bernard. <audio controls> <source src="{{ url_for('static', filename = 'bernard.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	
+	<div>Berne <audio controls> <source src="{{ url_for('static', filename = 'Berne.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Qui, il est avocat. <audio controls> <source src="{{ url_for('static', filename = 'yesheislawyer.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>pilote. <audio controls> <source src="{{ url_for('static', filename = 'pilote.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>moniteur. <audio controls> <source src="{{ url_for('static', filename = 'moniteur.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>professeur. <audio controls> <source src="{{ url_for('static', filename = 'professeur.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>économiste. <audio controls> <source src="{{ url_for('static', filename = 'economist.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>cinéaste. <audio controls> <source src="{{ url_for('static', filename = 'cinéaste.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+
+	<p><h2>femmes</h2></p>	
+	<div>est-cequeMoniqueest...?<audio controls> <source src="{{ url_for('static', filename = 'isMonique.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Véronique. <audio controls> <source src="{{ url_for('static', filename = 'Véronique.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Sabine. <audio controls> <source src="{{ url_for('static', filename = 'Sabine.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>	
+	<div>Oui, elle est avocate. <audio controls> <source src="{{ url_for('static', filename = 'actress.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>monitrice. <audio controls> <source src="{{ url_for('static', filename = 'monitrice.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Où habite-t-il? <audio controls> <source src="{{ url_for('static', filename = 'wherehelive.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Où habite-t-elle? <audio controls> <source src="{{ url_for('static', filename = 'whereshelive.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Il habite à Paris. <audio controls> <source src="{{ url_for('static', filename = 'helivesinparis.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Elle habite à Paris. <audio controls> <source src="{{ url_for('static', filename = 'shelivesinparis.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Berne. <audio controls> <source src="{{ url_for('static', filename = 'Berne.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Vichy. <audio controls> <source src="{{ url_for('static', filename = 'monitrice.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Rome. <audio controls> <source src="{{ url_for('static', filename = 'Rome.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Vichy. <audio controls> <source src="{{ url_for('static', filename = 'monitrice.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Genève. <audio controls> <source src="{{ url_for('static', filename = 'Genève.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Grenoble. <audio controls> <source src="{{ url_for('static', filename = 'Grenoble.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Est-ce que Monique est économiste. <audio controls> <source src="{{ url_for('static', filename = 'IsMoniqueeconomist.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+	<div>Oui, elle est économiste. <audio controls> <source src="{{ url_for('static', filename = 'ouielleestéconomiste.mp3')}}" type="audio/mpeg">Your browser does not support the audio element.</audio> </div>
+
+
+	<p><h2>pratiquer</h2> </p>
+	<p>1.</p>
+<!-- 1 -->
+	<div>
+		<div style = "width:50%; float:left;">(1)<input type="text" name="q2.10"></div>
+		<div style = "width:50%; float:left;"><input name="q2.11"></div>
+	</div>
+	<div>
+		<div style = "width:50%; float:left;">Oui, c'est Pascal.</div>
+		<div style = "width:50%; float:left;">Il est journaliste.</div>
+	</div>
+<!-- 2 -->
+	<div>
+		<div style = "width:50%; float:left;">(2)<input type="text" name="q2.20"></div>
+		<div style = "width:50%; float:left;"><input name="q2.22"></div>
+	</div>
+	<div>
+		<div style = "width:50%; float:left;">Oui, c'est Nathalie.</div>
+		<div style = "width:50%; float:left;">Elle est actrice.</div>
+	</div>
+<!-- 3 -->
+	<div>
+		<div style = "width:50%; float:left;">(3)<input type="text" name="q2.30"></div>
+		<div style = "width:50%; float:left;"><input name="q2.31"></div>
+	</div>
+	<div>
+		<div style = "width:50%; float:left;">C'est Philippe.</div>
+		<div style = "width:50%; float:left;">Il est à Lille.</div>
+	</div>
+<!-- 4 -->
+	<div>
+		<div style = "width:50%; float:left;">(2)<input type="text" name="q2.40"></div>
+		<div style = "width:50%; float:left;"><input name="q2.41"></div>
+	</div>
+	<div>
+		<div style = "width:50%; float:left;">C'est Fanny.</div>
+		<div style = "width:50%; float:left;">Elle est à Sète.</div>
+	</div>
+
+	<p>2. translate the following sentences.</p>
+	<div>
+		<div style = "width:50%; float:left;">这是夏尔(Charles)吗</div>
+		<div style = "width:50%; float:left;"><input type="text" name="q2.50"></div>
+	</div>
+	<div>
+		<div style = "width:50%; float:left;">对这是夏尔(Charles)</div>
+		<div style = "width:50%; float:left;"><input type="text" name="q2.60"></div>
+	</div>
+	<div>
+		<div style = "width:50%; float:left;">他是干什么的？</div>
+		<div style = "width:50%; float:left;"><input type="text" name="q2.70"></div>
+	</div>
+	<div>
+		<div style = "width:50%; float:left;">他是邮递员。</div>
+		<div style = "width:50%; float:left;"><input type="text" name="q2.80"></div>
+	</div>
+	<div>
+		<div style = "width:50%; float:left;">丽娜（Lina）是研究员。</div>
+		<div style = "width:50%; float:left;"><input type="text" name="q2.90"></div>
+	</div>
+	<div>
+		<div style = "width:50%; float:left;">帕斯卡尔(Pascal)是服装设计师。</div>
+		<div style = "width:50%; float:left;"><input type="text" name="q2.a0"></div>
+	</div>
+
+</div>
+

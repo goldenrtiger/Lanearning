@@ -60,20 +60,25 @@ h2              { font-size: 1.2em; }
 		}
 		function əshow()
 		{
-			audio = new Audio("{{ url_for('static', filename = '[i].mp3')}}");
+			audio = new Audio("{{ url_for('static', filename = '[ə].mp3')}}");
 			audio.play();
 		}
 		function ishow()
 		{
-			audio = new Audio("{{ url_for('static', filename = '[o].mp3')}}");
+			audio = new Audio("{{ url_for('static', filename = '[i].mp3')}}");
 			audio.play();
 		}
 		function oshow()
 		{
-			audio = new Audio("{{ url_for('static', filename = '[ɔ].mp3')}}");
+			audio = new Audio("{{ url_for('static', filename = '[o].mp3')}}");
 			audio.play();
 		}
 		function ɔshow()
+		{
+			audio = new Audio("{{ url_for('static', filename = '[ɔ].mp3')}}");
+			audio.play();
+		}
+		function yshow()
 		{
 			audio = new Audio("{{ url_for('static', filename = '[y].mp3')}}");
 			audio.play();
@@ -223,11 +228,11 @@ h2              { font-size: 1.2em; }
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "eshow()"value="[e]"/> 
-		发音方式：舌尖紧抵下齿，唇形扁平，开口度略大于[i]，嘴角略向两边拉，发音与汉语拼音中的ei相似，但开口度更小，并且口型保持不变。
+		发音方式：舌尖紧抵下齿，唇形扁平，开口度略大于[i]，嘴角略向两边拉，发音与汉语拼音中的ei相似，但开口度更小，并且口型保持不变。（1宜）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "εshow()"value="[ε]"/> 
-		发音方式：[ε]与[a]音舌位相似，但[ε]音发音时舌尖要平抵下齿，舌前部略隆起，开口度略小于[a]，相当于汉语拼音ai，口型要紧些。
+		发音方式：[ε]与[a]音舌位相似，但[ε]音发音时舌尖要平抵下齿，舌前部略隆起，开口度略小于[a]，相当于汉语拼音ai，口型要紧些。（哎）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "əshow()"value="[ə]"/> 
@@ -235,11 +240,11 @@ h2              { font-size: 1.2em; }
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "ishow()"value="[i]"/> 
-		发音方式：口腔开口度极小，舌尖紧抵下齿，唇形扁平，嘴角要用力向两边拉，与汉语拼音中的i相似，但口腔部位的肌肉更加紧张。
+		发音方式：口腔开口度极小，舌尖紧抵下齿，唇形扁平，嘴角要用力向两边拉，与汉语拼音中的i相似，但口腔部位的肌肉更加紧张。（i: 英）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "oshow()"value="[o]"/> 
-		发音方式：舌略向后缩，双唇突出，口型很圆，开口度非常小。
+		发音方式：舌略向后缩，双唇突出，口型很圆，开口度非常小。（u英）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "ɔshow()"value="[ɔ]"/> 
@@ -247,65 +252,65 @@ h2              { font-size: 1.2em; }
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "yshow()"value="[y]"/> 
-		发音方式：舌位、开口度和肌肉紧张度与元音[i]相近，但双唇突出，绷紧成圆形。发音与汉语拼音中的ü相似，但唇部肌肉更加紧张。
+		发音方式：舌位、开口度和肌肉紧张度与元音[i]相近，但双唇突出，绷紧成圆形。发音与汉语拼音中的ü相似，但唇部肌肉更加紧张。（与）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "ushow()"value="[u]"/> 
-		发音方式：舌尽量后缩，双唇突出呈圆形，口型紧缩。与汉语拼音中的u相似，但唇部肌肉更加紧张。
+		发音方式：舌尽量后缩，双唇突出呈圆形，口型紧缩。与汉语拼音中的u相似，但唇部肌肉更加紧张。（u：英）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "øshow()"value="[ø]"/> 
-		发音方式：舌位和开口度与元音[e]相同，双唇突出成圆形，肌肉较紧张。
+		发音方式：舌位和开口度与元音[e]相同，双唇突出成圆形，肌肉较紧张。（污 中）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "œshow()"value="[œ]"/> 
-		发音方式：舌位和开口度与元音[ε]相同，只是双唇突出成圆形，肌肉较轻松
+		发音方式：舌位和开口度与元音[ε]相同，只是双唇突出成圆形，肌肉较轻松（额 中）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "ɑ̃show()"value="[ɑ̃]"/> 
-		发音方式：发音部位与[a]相近，但舌略向后缩，开口度稍大，从口腔和鼻腔冲出，构成鼻音。
+		发音方式：发音部位与[a]相近，但舌略向后缩，开口度稍大，从口腔和鼻腔冲出，构成鼻音。（ɔn）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "ɛ̃show()"value="[ɛ̃]"/> 
-		发音方式：发音部位与[ε]相同，但气流从口腔和鼻腔冲出，构成鼻音。
+		发音方式：发音部位与[ε]相同，但气流从口腔和鼻腔冲出，构成鼻音。(哎n)
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "ɔ̃show()"value="[ɔ̃]"/> 
-		发音方式：舌尖离开下齿，舌略向后缩，口型与[o]相同，气流从口腔和鼻腔冲出，构成鼻音。
+		发音方式：舌尖离开下齿，舌略向后缩，口型与[o]相同，气流从口腔和鼻腔冲出，构成鼻音。(un 英)
 	</div>
 	<dt> 半元音
 	<div class="css1">
 		<input type="button" onclick = "jshow()"value="[j]"/> 
-		发音方式：发音部位和开口度与[i]基本相同，但发音短促，肌肉更紧张，气流通道狭窄，气流通过时产生摩擦。
+		发音方式：发音部位和开口度与[i]基本相同，但发音短促，肌肉更紧张，气流通道狭窄，气流通过时产生摩擦。（呀）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "wshow()"value="[w]"/> 
-		发音方式：发音部位和开口度与[u]基本相同，但发音短促，肌肉更紧张，气流通道狭窄，气流通过时产生摩擦。
+		发音方式：发音部位和开口度与[u]基本相同，但发音短促，肌肉更紧张，气流通道狭窄，气流通过时产生摩擦。（wa）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "ɥshow()"value="[ɥ]"/> 
-		发音方式：发音部位和开口度与[y]基本相同，但发音短促，肌肉更紧张，气流通道狭窄，气流通过时产生摩擦。
+		发音方式：发音部位和开口度与[y]基本相同，但发音短促，肌肉更紧张，气流通道狭窄，气流通过时产生摩擦。（yue第二声）
 	</div>
 	<dt> 辅音
 	<div class="css1">
 		<input type="button" onclick = "bshow()"value="[b]"/> 
-		发音方式：发音方式基本同[p]，但发音时声带振动，并只有极少量的气流冲出口腔。
+		发音方式：发音方式基本同[p]，但发音时声带振动，并只有极少量的气流冲出口腔。（拔）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "kshow()"value="[k]"/> 
-		发音方式：舌面抬起抵硬腭后部形成阻塞，气流突然从口腔冲出，形成爆破音。声带不振动，类似于汉语拼音中的g。在元音前不送气，在音节末或r、l构成的辅音群时送气，此时发音同英语中的k。
+		发音方式：舌面抬起抵硬腭后部形成阻塞，气流突然从口腔冲出，形成爆破音。声带不振动，类似于汉语拼音中的g。在元音前不送气，在音节末或r、l构成的辅音群时送气，此时发音同英语中的k。（ga拼）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "dshow()"value="[d]"/> 
-		发音方式：发音方式与[t]相同，但声带必须振动并只有极少量的气流冲出口腔。
+		发音方式：发音方式与[t]相同，但声带必须振动并只有极少量的气流冲出口腔。（踏 宜）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "fshow()"value="[f]"/> 
-		发音方式：上门齿顶往下唇内侧，气流通过唇齿间的缝隙擦出，形成摩擦音。
+		发音方式：上门齿顶往下唇内侧，气流通过唇齿间的缝隙擦出，形成摩擦音。（fa）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "gshow()"value="[g]"/> 
-		发音方式：发音方式同[k]，但声带必须振动并只有极少量的气流冲出口腔。
+		发音方式：发音方式同[k]，但声带必须振动并只有极少量的气流冲出口腔。（g 拼）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "ʒshow()"value="[ʒ]"/> 
@@ -313,19 +318,19 @@ h2              { font-size: 1.2em; }
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "lshow()"value="[l]"/> 
-		发音方式：舌尖抵上齿龈形成阻塞。发音时声带振动，气流从抬起的舌尖两侧出来，同时放下舌尖。
+		发音方式：舌尖抵上齿龈形成阻塞。发音时声带振动，气流从抬起的舌尖两侧出来，同时放下舌尖。（la）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "mshow()"value="[m]"/> 
-		发音方式：双唇紧闭，软腭下降形成阻塞，气流从紧闭的双唇冲出。
+		发音方式：双唇紧闭，软腭下降形成阻塞，气流从紧闭的双唇冲出。（ma）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "nshow()"value="[n]"/> 
-		发音方式：舌尖抵上齿龈，软腭下降形成阻塞，气流同时从鼻腔和口腔冲出，同时放下舌尖。
+		发音方式：舌尖抵上齿龈，软腭下降形成阻塞，气流同时从鼻腔和口腔冲出，同时放下舌尖。（na）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "pshow()"value="[p]"/> 
-		发音方式：双唇紧闭形成阻塞，气流突然从口腔冲出，形成爆破音。声带不振动，类似汉语拼音的b。在元音前不送气，在音节末或与l、r构成辅音群时送气，此时发音同英语中的p。
+		发音方式：双唇紧闭形成阻塞，气流突然从口腔冲出，形成爆破音。声带不振动，类似汉语拼音的b。在元音前不送气，在音节末或与l、r构成辅音群时送气，此时发音同英语中的p。（ba）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "rshow()"value="[r]"/> 
@@ -333,27 +338,27 @@ h2              { font-size: 1.2em; }
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "sshow()"value="[s]"/> 
-		发音方式：舌尖抵下齿，上下齿靠近，舌面前部与上颚间形成缝隙，气流通过缝隙时发生摩擦。
+		发音方式：舌尖抵下齿，上下齿靠近，舌面前部与上颚间形成缝隙，气流通过缝隙时发生摩擦。（sa）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "zshow()"value="[z]"/> 
-		发音方式：发音方式基本同[s]，但声带振动。
+		发音方式：发音方式基本同[s]，但声带振动。（za）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "tshow()"value="[t]"/> 
-		发音方式：舌尖抵上齿形成阻塞，气流突然从口腔冲出，形成爆破音。声带不振动，类似汉语拼音的d。在元音前不送气，在音节末或与l、r构成辅音群时送气，此时发音同英语中的t。
+		发音方式：舌尖抵上齿形成阻塞，气流突然从口腔冲出，形成爆破音。声带不振动，类似汉语拼音的d。在元音前不送气，在音节末或与l、r构成辅音群时送气，此时发音同英语中的t。（哒）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "vshow()"value="[v]"/> 
-		发音方式：发音方式基本与[f]，但声带振动，并且气流在唇齿之间的缝隙擦出，形成摩擦音。
+		发音方式：发音方式基本与[f]，但声带振动，并且气流在唇齿之间的缝隙擦出，形成摩擦音。（va）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "s1show()"value="[∫]"/> 
-		发音方式：舌尖抬向上齿龈稍后的部分，与上颚之间形成缝隙，双唇略向前突出成圆形，气流通过牙缝时形成摩擦。
+		发音方式：舌尖抬向上齿龈稍后的部分，与上颚之间形成缝隙，双唇略向前突出成圆形，气流通过牙缝时形成摩擦。（xia 第一声）
 	</div>
 	<div class="css1">
 		<input type="button" onclick = "ɲshow()"value="[ɲ]"/> 
-		发音方式：舌尖抵上齿龈，软腭下降形成阻塞，气流同时从鼻腔和口腔冲出，同时放下舌尖。
+		发音方式：舌尖抵上齿龈，软腭下降形成阻塞，气流同时从鼻腔和口腔冲出，同时放下舌尖。（nia 第四声）
 	</div>
 
 </div>
